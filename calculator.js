@@ -1,13 +1,13 @@
 function buttoncal(){
     const buttonNum = [];
-    var index = 1
+    var index = 1;
     buttonSign.forEach((i,s) =>{
         if(index==1||index==5||index==9||index==13||index==17){
-            buttonNum.push(`<div class="btn-group" style="margin-left: 25px;  width:300px; height:80px; background-color:rgb(134, 46, 46);">`)
+            buttonNum.push(`<div class="btn-group" style="margin-left: 25px;  width:300px; height:80px; background-color:rgb(134, 46, 46);">`);
         }
         buttonNum.push(`<button value=${s} name=button${i} data-action=${i} class="btn btn-outline-danger font-monospace fs-4"  style="width:75px; height:80px;">${s}</button>`);
         if(index==4||index==8||index==12||index==16||index==20){
-            buttonNum.push(`</div>`)
+            buttonNum.push(`</div>`);
         }
         index++;    
     });
